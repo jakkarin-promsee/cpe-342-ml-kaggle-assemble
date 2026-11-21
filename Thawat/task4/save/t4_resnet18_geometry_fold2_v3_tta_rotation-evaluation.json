@@ -1,0 +1,22 @@
+{
+  "name": "t4_resnet18_geometry_fold2_v3_tta_rotation",
+  "task": "task4",
+  "evaluated_at": "2026-11-17T18:41:05+00:00",
+  "split": "validation",
+  "card": {
+    "split": "image-hash grouped fold 2/5",
+    "seed": 42,
+    "tta": [
+      "identity",
+      "rot_m10",
+      "rot_p10"
+    ],
+    "selection_note": "views fixed from fold 1"
+  },
+  "metric": "macro_F1_grouped_fold2",
+  "score": 0.9556893723521002,
+  "higher_is_better": true,
+  "model_card_path": "task4/save/t4_resnet18_geometry_fold2_v3_tta_rotation.json",
+  "model_path": "task4/save/t4_resnet18_geometry_fold2_v3_tta_rotation.joblib",
+  "data_name": "eda_near_duplicate_v3"
+}

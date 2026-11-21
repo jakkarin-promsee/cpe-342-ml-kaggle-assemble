@@ -1,0 +1,16 @@
+{
+  "name": "eda_near_duplicate_v3",
+  "split": "test",
+  "path": "task4/data/eda/eda_near_duplicate_v3-test.parquet",
+  "rows": 25889,
+  "columns": {
+    "id": "str",
+    "file_name": "str",
+    "image_sha256": "str",
+    "phash": "uint64",
+    "dhash": "uint64",
+    "width": "int64",
+    "height": "int64",
+    "nn_train_phash_dist": "uint8"
+  }
+}

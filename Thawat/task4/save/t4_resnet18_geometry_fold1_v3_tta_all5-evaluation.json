@@ -1,0 +1,24 @@
+{
+  "name": "t4_resnet18_geometry_fold1_v3_tta_all5",
+  "task": "task4",
+  "evaluated_at": "2026-11-17T17:49:02+00:00",
+  "split": "validation",
+  "card": {
+    "split": "image-hash grouped fold 1/5",
+    "seed": 42,
+    "tta": [
+      "identity",
+      "rot_m10",
+      "rot_p10",
+      "scale_090",
+      "scale_110"
+    ],
+    "selection_note": "views chosen and scored on the same fold"
+  },
+  "metric": "macro_F1",
+  "score": 0.9556059231902972,
+  "higher_is_better": true,
+  "model_card_path": "task4/save/t4_resnet18_geometry_fold1_v3_tta_all5.json",
+  "model_path": "task4/save/t4_resnet18_geometry_fold1_v3_tta_all5.joblib",
+  "data_name": "eda_near_duplicate_v3"
+}

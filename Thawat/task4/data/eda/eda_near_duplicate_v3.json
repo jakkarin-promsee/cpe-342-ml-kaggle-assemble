@@ -1,0 +1,52 @@
+{
+  "name": "eda_near_duplicate_v3",
+  "task": "task4",
+  "created_at": "2026-11-17T15:41:25+00:00",
+  "card": {
+    "source": "task4/data/raw train.csv, test.csv and images",
+    "preparation": "SHA-256, 64-bit pHash (32x32 DCT) and dHash (9x8) per image; Train pairs linked when pHash and dHash distances are both within the chosen thresholds; connected components give source_group.",
+    "thresholds": {
+      "phash_max": 4,
+      "dhash_max": 16
+    },
+    "threshold_reason": "pHash <= 4 keeps same-label share >= 0.989 and sampled pairs were mostly the same capture or adjacent frames; pHash 0-2 pairs with dHash > 16 (155 of 501) looked like different scenes, so DHASH_MAX = 16. pHash 6 adds 76 mixed-label groups and 8 chains a 3,950-image group.",
+    "test_use": "Hashes and nearest-Train distance only, descriptive; no fitting."
+  },
+  "format": "parquet",
+  "splits": {
+    "train": {
+      "path": "task4/data/eda/eda_near_duplicate_v3-train.parquet",
+      "card_path": "task4/data/eda/eda_near_duplicate_v3-train.json",
+      "rows": 31546,
+      "columns": {
+        "id": "str",
+        "file_name": "str",
+        "label": "int64",
+        "class": "str",
+        "image_sha256": "str",
+        "phash": "uint64",
+        "dhash": "uint64",
+        "width": "int64",
+        "height": "int64",
+        "nn_phash_dist": "uint8",
+        "nn_dhash_dist": "uint8",
+        "source_group": "str"
+      }
+    },
+    "test": {
+      "path": "task4/data/eda/eda_near_duplicate_v3-test.parquet",
+      "card_path": "task4/data/eda/eda_near_duplicate_v3-test.json",
+      "rows": 25889,
+      "columns": {
+        "id": "str",
+        "file_name": "str",
+        "image_sha256": "str",
+        "phash": "uint64",
+        "dhash": "uint64",
+        "width": "int64",
+        "height": "int64",
+        "nn_train_phash_dist": "uint8"
+      }
+    }
+  }
+}
