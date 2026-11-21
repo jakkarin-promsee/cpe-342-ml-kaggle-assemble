@@ -1,0 +1,107 @@
+# ============================================================
+# CPE342 Player Intelligence System - Git ignore rules
+# Keep source code, README files, and final-notebook/*.ipynb.
+# Do not commit datasets, trained models, credentials, or outputs.
+# ============================================================
+
+# --- Datasets and tabular exports ---
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.arrow
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.sqlite
+*.sqlite3
+*.db
+
+# Common dataset storage directories (any team folder)
+**/data/
+**/dataset/
+**/datasets/
+**/raw_data/
+**/processed_data/
+**/input/
+
+# --- Models and training checkpoints ---
+*.joblib
+*.pkl
+*.pickle
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.safetensors
+*.keras
+*.pb
+*.tflite
+*.weights
+**/models/
+**/checkpoints/
+**/weights/
+
+# --- Generated outputs, experiments, and logs ---
+**/outputs/
+**/artifacts/
+**/predictions/
+**/runs/
+**/wandb/
+**/mlruns/
+**/lightning_logs/
+*.log
+*.tmp
+*.temp
+
+# --- Archives and other large bundles ---
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.so
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# --- Jupyter / IPython (do not ignore .ipynb notebooks!) ---
+.ipynb_checkpoints/
+.ipython/
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+ENV/
+
+# --- Secrets and Kaggle credentials ---
+.env
+.env.*
+!.env.example
+kaggle.json
+**/.kaggle/
+*.pem
+*.key
+
+# --- IDE / OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# --- TensorFlow / PyTorch cache ---
+**/tensorboard/
+**/events.out.tfevents.*
