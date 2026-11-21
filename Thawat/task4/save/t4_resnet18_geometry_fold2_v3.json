@@ -1,0 +1,58 @@
+{
+  "name": "t4_resnet18_geometry_fold2_v3",
+  "task": "task4",
+  "created_at": "2026-11-17T18:39:06+00:00",
+  "card": {
+    "idea": "Geometry ResNet18 on grouped fold 2, checkpoint kept to confirm TTA chosen on fold 1",
+    "augmentation": "geometry",
+    "split": "image-hash grouped fold 2/5",
+    "seed": 42,
+    "epochs": [
+      {
+        "epoch": 1,
+        "train_loss": 0.5285215435435439,
+        "valid_macro_F1": 0.903121651738032
+      },
+      {
+        "epoch": 2,
+        "train_loss": 0.26672849897896755,
+        "valid_macro_F1": 0.9218554801359797
+      },
+      {
+        "epoch": 3,
+        "train_loss": 0.2023569940918433,
+        "valid_macro_F1": 0.8957502363410239
+      },
+      {
+        "epoch": 4,
+        "train_loss": 0.16271604834515693,
+        "valid_macro_F1": 0.9110520668528986
+      },
+      {
+        "epoch": 5,
+        "train_loss": 0.13523202506166165,
+        "valid_macro_F1": 0.9334830038578261
+      },
+      {
+        "epoch": 6,
+        "train_loss": 0.1278437187925956,
+        "valid_macro_F1": 0.9389277454119466
+      },
+      {
+        "epoch": 7,
+        "train_loss": 0.10615451493973499,
+        "valid_macro_F1": 0.9486636662777022
+      },
+      {
+        "epoch": 8,
+        "train_loss": 0.09592458853031573,
+        "valid_macro_F1": 0.9552765801501646
+      }
+    ],
+    "inference": "image_training.load_checkpoint; image_transform('none', train=False)"
+  },
+  "data_name": "eda_near_duplicate_v3",
+  "data_card_path": "task4/data/eda/eda_near_duplicate_v3.json",
+  "model_path": "task4/save/t4_resnet18_geometry_fold2_v3.pt",
+  "format": "pt"
+}

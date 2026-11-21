@@ -1,0 +1,14 @@
+{
+  "name": "t4_resnet18_geometry_fold1_v3_tta_all5",
+  "task": "task4",
+  "created_at": "2026-11-17T17:49:02+00:00",
+  "card": {
+    "idea": "TTA over ['identity', 'rot_m10', 'rot_p10', 'scale_090', 'scale_110'] on top of t4_resnet18_geometry_fold1_v3; probabilities averaged before argmax",
+    "inference": "tta.view_probabilities + tta.tta_predict",
+    "split": "image-hash grouped fold 1/5"
+  },
+  "data_name": "eda_near_duplicate_v3",
+  "data_card_path": "task4/data/eda/eda_near_duplicate_v3.json",
+  "model_path": "task4/save/t4_resnet18_geometry_fold1_v3_tta_all5.joblib",
+  "format": "joblib"
+}

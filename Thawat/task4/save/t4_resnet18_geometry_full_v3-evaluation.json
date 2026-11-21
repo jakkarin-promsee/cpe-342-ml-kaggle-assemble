@@ -1,0 +1,15 @@
+{
+  "name": "t4_resnet18_geometry_full_v3",
+  "task": "task4",
+  "evaluated_at": "2026-11-18T09:46:28+00:00",
+  "split": "validation",
+  "card": {
+    "note": "Procedure estimate = mean plain macro F1 of build_model_v3 folds 1-2; not measured on this full-data fit"
+  },
+  "metric": "macro_F1_grouped_cv2_procedure",
+  "score": 0.95387,
+  "higher_is_better": true,
+  "model_card_path": "task4/save/t4_resnet18_geometry_full_v3.json",
+  "model_path": "task4/save/t4_resnet18_geometry_full_v3.pt",
+  "data_name": "eda_near_duplicate_v3"
+}
