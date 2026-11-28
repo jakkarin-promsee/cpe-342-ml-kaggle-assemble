@@ -1,0 +1,13 @@
+{
+  "name": "kaggle_t1234_peer_t5_tail_f1_20261121",
+  "source_reference": "src\\task5\\analysis\\reference\\peer_density_auto_v1.csv",
+  "source_reference_sha256": "cd5725c7e9994d60a05ad31f917107d92e268f9833c0c60d23f8ac35849776a3",
+  "csv_sha256": "bc31c3c368feda76f3d9bbd6efd043f21d163a8da9091951991cb09190766309",
+  "candidate": "TAIL_F1",
+  "feature_set": "F1_temporal",
+  "fit_source": "all 25889 supplied unlabeled Task 5 rows; no teammate predictions used for fitting",
+  "task1_to_task4": "original CSV text preserved row by row",
+  "task5": "top 2046 full-file anomaly scores, 1=anomaly, stable row-order tie break",
+  "selection_basis": "prior public detector evidence, unlabeled resample stability, distinct Top-8% selections",
+  "not_ground_truth": "teammate Task 5 predictions and overall score are not Task 5 labels or F3"
+}

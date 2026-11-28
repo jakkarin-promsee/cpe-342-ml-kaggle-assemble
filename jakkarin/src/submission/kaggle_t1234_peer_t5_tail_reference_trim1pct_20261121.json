@@ -1,0 +1,13 @@
+{
+  "name": "kaggle_t1234_peer_t5_tail_reference_trim1pct_20261121",
+  "csv_sha256": "49088dde59071312635f7b575fe548e5980544a096e9a208c4f2e0f02f425fc5",
+  "source_reference": "src\\task5\\analysis\\reference\\peer_density_auto_v1.csv",
+  "source_reference_sha256": "cd5725c7e9994d60a05ad31f917107d92e268f9833c0c60d23f8ac35849776a3",
+  "task5_source": "F1 temporal Empirical Tail, 206 features, top-eight two-sided ECDF surprises",
+  "reference_trim": "Remove highest original Tail score 1% of rows from ECDF reference only",
+  "scored_rows": 25889,
+  "reference_rows": 25630,
+  "task5_alerts": 2046,
+  "tasks1_to_4": "teammate reference text preserved exactly row by row",
+  "caveat": "No Task 5 labels, F3, or Kaggle score; all rows remain eligible for alerts"
+}

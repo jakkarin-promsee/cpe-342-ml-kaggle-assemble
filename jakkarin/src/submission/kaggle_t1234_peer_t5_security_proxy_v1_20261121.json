@@ -1,0 +1,17 @@
+{
+  "name": "kaggle_t1234_peer_t5_security_proxy_v1_20261121",
+  "csv_sha256": "c7332a19a46e326f2c9be69179e0fed923b555327d57b6440e5c1564886c2849",
+  "source_reference": "src\\task5\\analysis\\reference\\peer_density_auto_v1.csv",
+  "source_reference_sha256": "cd5725c7e9994d60a05ad31f917107d92e268f9833c0c60d23f8ac35849776a3",
+  "auxiliary_targets": [
+    "password_changed",
+    "mass_item_sale"
+  ],
+  "predictors": "118 cleaned original predictors excluding all four supplied security flags and player_id",
+  "model": "two LightGBM classifiers, 300 trees, 15 leaves, learning_rate .04, balanced auxiliary classes, seed 42",
+  "score": "max fitted full-file percentile rank of predicted positive auxiliary event",
+  "fit_source": "supplied unlabeled Task 5 rows with observed auxiliary flag target; no is_anomaly labels",
+  "task1_to_task4": "teammate CSV text preserved exactly row by row",
+  "task5": "top 2046 proxy scores, 1=anomaly; stable row-order tie break",
+  "caveat": "auxiliary feature targets are not fraud labels or Task 5 F3; teammate predictions unused in fitting and scoring"
+}

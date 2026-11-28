@@ -1,0 +1,12 @@
+{
+  "name": "kaggle_t1234_peer_t5_global_ocsvm_tailtrim5_v1_20261122",
+  "csv_sha256": "0f6b7e60da7a26c50cf901fcd02cc47f232e8d6d9f898cd57286439ea74ed252",
+  "source_reference": "src\\task5\\analysis\\reference\\peer_density_auto_v1.csv",
+  "source_reference_sha256": "cd5725c7e9994d60a05ad31f917107d92e268f9833c0c60d23f8ac35849776a3",
+  "task1_to_task4": "best-known submission text preserved row by row",
+  "task5": "top 2046 full-file scores, 1 = anomaly, stable row-order tie break",
+  "candidate": "GLOBAL_OCSVM_TRIM5",
+  "model": "single global One-Class SVM (RBF, nu 0.10, gamma scale) on F0, TAIL_F1 top 5% excluded from fitting only",
+  "purpose": "isolate the cohort effect: differs from COHORT_OCSVM_TRIM5 only by having no cohort split or cohort calibration",
+  "lineage": "prepared from report.ipynb logic; the notebook regenerates and verifies this file byte for byte"
+}

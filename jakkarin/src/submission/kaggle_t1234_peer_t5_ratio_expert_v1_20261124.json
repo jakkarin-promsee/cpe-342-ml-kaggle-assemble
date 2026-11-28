@@ -1,0 +1,15 @@
+{
+  "name": "kaggle_t1234_peer_t5_ratio_expert_v1_20261124",
+  "csv_sha256": "6b79765273fbcd969053cd3b2e23a1d3f027e72e25d97c5def95a1fd2d4c6c17",
+  "source_reference": "src\\task5\\analysis\\reference\\peer_density_auto_v1.csv",
+  "source_reference_sha256": "cd5725c7e9994d60a05ad31f917107d92e268f9833c0c60d23f8ac35849776a3",
+  "task1_to_task4": "best-known submission text preserved row by row",
+  "task5": "top 2046 full-file scores, 1 = anomaly, stable row-order tie break",
+  "candidate": "RATIO_EXPERT",
+  "model": "LATENT_EXPERTS with one added nominating expert: the dependence-ratio population (players where real data is denser than the family-independence null); LATENT fill rule unchanged",
+  "method": "LightGBM real-vs-shuffled classifier: real players against copies with whole feature blocks (29 period families, login coordinates, each global/security column) permuted independently; inputs are the 122 raw columns plus per-family level, Period-4 change and spread",
+  "params": "3 shuffled copies, 5-fold cross-fit x 2 repeats, 600 rounds, lr 0.05, 31 leaves, min_child_samples 100, deterministic, SEED 42",
+  "population_rule": "largest top-n with FDR <= 20% against held-out shuffled rows",
+  "ratio_population": 1925,
+  "ratio_population_fdr": 0.166
+}

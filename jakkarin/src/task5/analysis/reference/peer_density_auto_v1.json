@@ -1,0 +1,10 @@
+{
+  "name": "peer_density_auto_v1",
+  "source_filename": "kaggle_t12345_t1_slow800_bagging_v4_t3_conditional_quantile_v1_t4_resnet18_cosine18_tta_v1_t5_density_auto_v1.csv",
+  "sha256": "cd5725c7e9994d60a05ad31f917107d92e268f9833c0c60d23f8ac35849776a3",
+  "rows": 25889,
+  "task5_positive_predictions": 2046,
+  "user_reported_overall_kaggle_score": 0.81771,
+  "meaning": "Teammate submission predictions; model algorithm unknown. Read-only agreement reference, not ground truth or labels for fitting.",
+  "alignment": "CSV id order verified identical to src/submission/sample_submission.csv; Task 5 raw player rows are matched by that order."
+}

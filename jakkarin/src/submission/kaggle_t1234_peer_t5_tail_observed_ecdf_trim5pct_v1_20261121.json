@@ -1,0 +1,16 @@
+{
+  "name": "kaggle_t1234_peer_t5_tail_observed_ecdf_trim5pct_v1_20261121",
+  "csv_sha256": "be56cba0bb3603244550d0a68f5689042f9877d819db50f2f3d103c5b713f7c2",
+  "source_reference": "src\\task5\\analysis\\reference\\peer_density_auto_v1.csv",
+  "source_reference_sha256": "cd5725c7e9994d60a05ad31f917107d92e268f9833c0c60d23f8ac35849776a3",
+  "task5_source": "F1 temporal Empirical Tail, 206 features, top-eight two-sided observed-value ECDF surprises",
+  "cleaning": "Mask invalid coordinate pairs and -1 refund/guild counts; leave all other missing as NaN; no median imputation, rounding, or clipping",
+  "missing_score": "Missing query features contribute zero tail surprise; each feature ECDF excludes missing reference values",
+  "reference_trim": "Remove highest observed-only Tail score 5% of rows from ECDF reference only",
+  "reference_rows": 24594,
+  "scored_rows": 25889,
+  "task5_alerts": 2046,
+  "common_alerts_with_scored_trim5pct": 2032,
+  "tasks1_to_4": "teammate reference text preserved exactly row by row",
+  "caveat": "No Task 5 labels, F3, or Kaggle score; all rows remain eligible for alerts"
+}

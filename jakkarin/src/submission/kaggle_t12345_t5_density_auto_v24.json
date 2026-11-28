@@ -1,0 +1,18 @@
+{
+  "name": "kaggle_t12345_t5_density_auto_v24",
+  "status": "prepared locally; not uploaded",
+  "base_submission": "kaggle_t12345_t5_tail_engineered_v20.csv",
+  "base_sha256": "2dd79b546af197688d3ff35211cc744c2e86a28360ea3a01343f743364c1505a",
+  "friend_comparison_file": "kaggle_t12345_t1_slow800_bagging_v4_t3_conditional_quantile_v1_t4_resnet18_cosine18_tta_v1_t5_density_auto_v1.csv",
+  "friend_sha256": "cd5725c7e9994d60a05ad31f917107d92e268f9833c0c60d23f8ac35849776a3",
+  "comparison_budget": 2046,
+  "alerts": 2046,
+  "changed_task": "task5",
+  "task5_orientation": "1 = anomaly",
+  "score_formula": "0.5 * fitted density rarity percentile + 0.5 * fitted autoencoder error percentile; select 2046 largest, row index breaks ties",
+  "model_card": "task5/save/t5_density_auto_original_v1.json",
+  "dataset_card": "task5/data/eda/eda_original_v2.json",
+  "rows": 25889,
+  "seed": 42,
+  "output_sha256": "241c1c0c14ddbbe412866a63f671c6199e373396bda4b545ac4fb52517e95ea0"
+}

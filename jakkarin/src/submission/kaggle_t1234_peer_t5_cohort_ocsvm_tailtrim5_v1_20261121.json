@@ -1,0 +1,14 @@
+{
+  "name": "kaggle_t1234_peer_t5_cohort_ocsvm_tailtrim5_v1_20261121",
+  "csv_sha256": "cf8abc0099a192fd55e90cd7c36e88acb43830343362d674c2c95c5b2bc1b62b",
+  "source_reference": "src\\task5\\analysis\\reference\\peer_density_auto_v1.csv",
+  "source_reference_sha256": "cd5725c7e9994d60a05ad31f917107d92e268f9833c0c60d23f8ac35849776a3",
+  "cohorts": "age_missing or 2x2 account_age_days and P1-P3 median activity_level at full-file medians",
+  "predictors": "110 cleaned F0 behavioral raw features, global median imputation and RobustScaler",
+  "trim": "exclude the highest original F1 empirical-tail score 5% of rows from each cohort OCSVM fit only",
+  "model": "OneClassSVM RBF, nu .10, gamma scale, one model per cohort",
+  "calibration": "within-cohort percentile rank against retained fit-row negative score_samples",
+  "task5": "top 2046 calibrated scores, 1=anomaly; stable row-order tie break",
+  "tasks1_to_4": "teammate reference text preserved exactly row by row",
+  "caveat": "No Task 5 labels, F3, or Kaggle score; teammate predictions unused in fitting or candidate choice"
+}

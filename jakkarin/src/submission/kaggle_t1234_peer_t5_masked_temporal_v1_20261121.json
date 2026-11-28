@@ -1,0 +1,15 @@
+{
+  "name": "kaggle_t1234_peer_t5_masked_temporal_v1_20261121",
+  "source_reference": "src\\task5\\analysis\\reference\\peer_density_auto_v1.csv",
+  "source_reference_sha256": "cd5725c7e9994d60a05ad31f917107d92e268f9833c0c60d23f8ac35849776a3",
+  "csv_sha256": "a4ac8204b2e4c0467a7ce2223f45eab1f3f24238ad11c1ff4b69372e8717dbf6",
+  "candidate": "MASKED_TEMPORAL",
+  "training": "from scratch on all 25889 supplied unlabeled Task 5 rows",
+  "input": "16 named temporal families x 4 periods plus account_age_days and behavior_stability; observed indicators; one period masked",
+  "model": "MLPRegressor 128-64-128, alpha=0.001, batch=256, early stopping, seed=42",
+  "score": "maximum over four periods of mean top-three observed normalized masked prediction errors",
+  "task1_to_task4": "original teammate CSV text preserved row by row",
+  "task5": "top 2046 full-file scores, 1=anomaly; stable row-order tie break",
+  "peer_task5": "not used for fitting, feature selection, scoring, or cutoff tuning",
+  "not_ground_truth": "teammate output and overall Kaggle score are not Task 5 labels or F3"
+}
